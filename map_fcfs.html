@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_115e513de2582c6fd65463a5ace0abfa {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_115e513de2582c6fd65463a5ace0abfa" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_115e513de2582c6fd65463a5ace0abfa = L.map(
+                "map_115e513de2582c6fd65463a5ace0abfa",
+                {
+                    center: [13.121175156782886, 100.91917763861443],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9bafa2068a5808fdc71b068bd3e2f366 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9bafa2068a5808fdc71b068bd3e2f366.addTo(map_115e513de2582c6fd65463a5ace0abfa);
+        
+    
+            var marker_e0501d84fd00a38ddd861133f4d3f2c1 = L.marker(
+                [13.121175156782886, 100.91917763861443],
+                {
+}
+            ).addTo(map_115e513de2582c6fd65463a5ace0abfa);
+        
+    
+            var icon_e76acceecf2c42c098d2cd6baab16da0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkpurple",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_056867da44de789b4342ffe481186c02 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f89315678d92577879299660ae3cab47 = $(`<div id="html_f89315678d92577879299660ae3cab47" style="width: 100.0%; height: 100.0%;">START / END (Depot)</div>`)[0];
+                popup_056867da44de789b4342ffe481186c02.setContent(html_f89315678d92577879299660ae3cab47);
+            
+        
+
+        marker_e0501d84fd00a38ddd861133f4d3f2c1.bindPopup(popup_056867da44de789b4342ffe481186c02)
+        ;
+
+        
+    
+    
+                marker_e0501d84fd00a38ddd861133f4d3f2c1.setIcon(icon_e76acceecf2c42c098d2cd6baab16da0);
+            
+    
+            var marker_f2cebb603679d7d1bd174b79c302fa64 = L.marker(
+                [13.122429331737106, 100.91919964513887],
+                {
+}
+            ).addTo(map_115e513de2582c6fd65463a5ace0abfa);
+        
+    
+            var div_icon_9484a9ae0d9fc010740706e20beff69e = L.divIcon({
+  "html": "\n                \u003cdiv style=\"width:32px;height:32px;border-radius:50%;background:red;color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;box-shadow:0 2px 4px rgba(0,0,0,0.5);border:2px solid #ffffff\"\u003e1\u003c/div\u003e\n                ",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "className": "empty",
+});
+        
+    
+        var popup_abfdde61aa45d533e07ab4106b64ea84 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_148d9d59dbc7b68b1fa75fb8e0604be1 = $(`<div id="html_148d9d59dbc7b68b1fa75fb8e0604be1" style="width: 100.0%; height: 100.0%;">Step 1: Checkpoint_A</div>`)[0];
+                popup_abfdde61aa45d533e07ab4106b64ea84.setContent(html_148d9d59dbc7b68b1fa75fb8e0604be1);
+            
+        
+
+        marker_f2cebb603679d7d1bd174b79c302fa64.bindPopup(popup_abfdde61aa45d533e07ab4106b64ea84)
+        ;
+
+        
+    
+    
+            marker_f2cebb603679d7d1bd174b79c302fa64.bindTooltip(
+                `<div>
+                     Step 1: Checkpoint_A
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f2cebb603679d7d1bd174b79c302fa64.setIcon(div_icon_9484a9ae0d9fc010740706e20beff69e);
+            
+    
+            var marker_97c3263c7d5223d9695386c360dc45f5 = L.marker(
+                [13.120161658260738, 100.9207100013017],
+                {
+}
+            ).addTo(map_115e513de2582c6fd65463a5ace0abfa);
+        
+    
+            var div_icon_9b4e87fe8be4bc005b24de3dbb4f9c07 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"width:32px;height:32px;border-radius:50%;background:red;color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;box-shadow:0 2px 4px rgba(0,0,0,0.5);border:2px solid #ffffff\"\u003e2\u003c/div\u003e\n                ",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "className": "empty",
+});
+        
+    
+        var popup_cf459cf1bb1e55eff7e515ed86c9fe58 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0b4fb411b179c3a3c0f121225b0cc196 = $(`<div id="html_0b4fb411b179c3a3c0f121225b0cc196" style="width: 100.0%; height: 100.0%;">Step 2: Checkpoint_B</div>`)[0];
+                popup_cf459cf1bb1e55eff7e515ed86c9fe58.setContent(html_0b4fb411b179c3a3c0f121225b0cc196);
+            
+        
+
+        marker_97c3263c7d5223d9695386c360dc45f5.bindPopup(popup_cf459cf1bb1e55eff7e515ed86c9fe58)
+        ;
+
+        
+    
+    
+            marker_97c3263c7d5223d9695386c360dc45f5.bindTooltip(
+                `<div>
+                     Step 2: Checkpoint_B
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_97c3263c7d5223d9695386c360dc45f5.setIcon(div_icon_9b4e87fe8be4bc005b24de3dbb4f9c07);
+            
+    
+            var marker_970c11901e4eb2a0c660bec09080c57e = L.marker(
+                [13.118751724113698, 100.92070378074456],
+                {
+}
+            ).addTo(map_115e513de2582c6fd65463a5ace0abfa);
+        
+    
+            var div_icon_680f283fc9b7d5dc69c4b0f8bab4a1f2 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"width:32px;height:32px;border-radius:50%;background:red;color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;box-shadow:0 2px 4px rgba(0,0,0,0.5);border:2px solid #ffffff\"\u003e3\u003c/div\u003e\n                ",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "className": "empty",
+});
+        
+    
+        var popup_170346029c658f3250bad14d85ac5481 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_56349fa83c5110c90d1585c836005c25 = $(`<div id="html_56349fa83c5110c90d1585c836005c25" style="width: 100.0%; height: 100.0%;">Step 3: Checkpoint_C</div>`)[0];
+                popup_170346029c658f3250bad14d85ac5481.setContent(html_56349fa83c5110c90d1585c836005c25);
+            
+        
+
+        marker_970c11901e4eb2a0c660bec09080c57e.bindPopup(popup_170346029c658f3250bad14d85ac5481)
+        ;
+
+        
+    
+    
+            marker_970c11901e4eb2a0c660bec09080c57e.bindTooltip(
+                `<div>
+                     Step 3: Checkpoint_C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_970c11901e4eb2a0c660bec09080c57e.setIcon(div_icon_680f283fc9b7d5dc69c4b0f8bab4a1f2);
+            
+    
+            var marker_c35121390a791ea4646e6267d03c8964 = L.marker(
+                [13.123504977995106, 100.91833176340027],
+                {
+}
+            ).addTo(map_115e513de2582c6fd65463a5ace0abfa);
+        
+    
+            var div_icon_14d0a576ee65f677aae54deeee7987ee = L.divIcon({
+  "html": "\n                \u003cdiv style=\"width:32px;height:32px;border-radius:50%;background:red;color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;box-shadow:0 2px 4px rgba(0,0,0,0.5);border:2px solid #ffffff\"\u003e4\u003c/div\u003e\n                ",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "className": "empty",
+});
+        
+    
+        var popup_aac2bfa270244cef9935c32d17063348 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_54e5b005a451d91b76bfc42e86ef27e5 = $(`<div id="html_54e5b005a451d91b76bfc42e86ef27e5" style="width: 100.0%; height: 100.0%;">Step 4: Checkpoint_D</div>`)[0];
+                popup_aac2bfa270244cef9935c32d17063348.setContent(html_54e5b005a451d91b76bfc42e86ef27e5);
+            
+        
+
+        marker_c35121390a791ea4646e6267d03c8964.bindPopup(popup_aac2bfa270244cef9935c32d17063348)
+        ;
+
+        
+    
+    
+            marker_c35121390a791ea4646e6267d03c8964.bindTooltip(
+                `<div>
+                     Step 4: Checkpoint_D
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c35121390a791ea4646e6267d03c8964.setIcon(div_icon_14d0a576ee65f677aae54deeee7987ee);
+            
+    
+            var marker_6c51bdf602d4d4723911602c76a02463 = L.marker(
+                [13.11925987837743, 100.91986438395534],
+                {
+}
+            ).addTo(map_115e513de2582c6fd65463a5ace0abfa);
+        
+    
+            var div_icon_b1b7b45b22340ed75b9bad9127b5412a = L.divIcon({
+  "html": "\n                \u003cdiv style=\"width:32px;height:32px;border-radius:50%;background:red;color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;box-shadow:0 2px 4px rgba(0,0,0,0.5);border:2px solid #ffffff\"\u003e5\u003c/div\u003e\n                ",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "className": "empty",
+});
+        
+    
+        var popup_66f2008864297c7f8b67fa829f9ad5ff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d95b5751fc34db5f8c68a1262d3d55e6 = $(`<div id="html_d95b5751fc34db5f8c68a1262d3d55e6" style="width: 100.0%; height: 100.0%;">Step 5: Checkpoint_E</div>`)[0];
+                popup_66f2008864297c7f8b67fa829f9ad5ff.setContent(html_d95b5751fc34db5f8c68a1262d3d55e6);
+            
+        
+
+        marker_6c51bdf602d4d4723911602c76a02463.bindPopup(popup_66f2008864297c7f8b67fa829f9ad5ff)
+        ;
+
+        
+    
+    
+            marker_6c51bdf602d4d4723911602c76a02463.bindTooltip(
+                `<div>
+                     Step 5: Checkpoint_E
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6c51bdf602d4d4723911602c76a02463.setIcon(div_icon_b1b7b45b22340ed75b9bad9127b5412a);
+            
+    
+            var marker_52712eac8997d4132184c5a6294c534b = L.marker(
+                [13.11878571527889, 100.92146159792324],
+                {
+}
+            ).addTo(map_115e513de2582c6fd65463a5ace0abfa);
+        
+    
+            var div_icon_5ad919a80b87c7737d7b52639532d084 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"width:32px;height:32px;border-radius:50%;background:red;color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;box-shadow:0 2px 4px rgba(0,0,0,0.5);border:2px solid #ffffff\"\u003e6\u003c/div\u003e\n                ",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "className": "empty",
+});
+        
+    
+        var popup_dfcbf74c59d19093058dda408d2c7ae1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3d2e21242a7d846e68f73700d1e42ab6 = $(`<div id="html_3d2e21242a7d846e68f73700d1e42ab6" style="width: 100.0%; height: 100.0%;">Step 6: Checkpoint_F</div>`)[0];
+                popup_dfcbf74c59d19093058dda408d2c7ae1.setContent(html_3d2e21242a7d846e68f73700d1e42ab6);
+            
+        
+
+        marker_52712eac8997d4132184c5a6294c534b.bindPopup(popup_dfcbf74c59d19093058dda408d2c7ae1)
+        ;
+
+        
+    
+    
+            marker_52712eac8997d4132184c5a6294c534b.bindTooltip(
+                `<div>
+                     Step 6: Checkpoint_F
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_52712eac8997d4132184c5a6294c534b.setIcon(div_icon_5ad919a80b87c7737d7b52639532d084);
+            
+    
+            var marker_b4134637399e555de2c6fecc1dc72466 = L.marker(
+                [13.124953720965747, 100.91990487272771],
+                {
+}
+            ).addTo(map_115e513de2582c6fd65463a5ace0abfa);
+        
+    
+            var div_icon_914649b3f6c56abbdc2fafc75f9882c2 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"width:32px;height:32px;border-radius:50%;background:red;color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;box-shadow:0 2px 4px rgba(0,0,0,0.5);border:2px solid #ffffff\"\u003e7\u003c/div\u003e\n                ",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "className": "empty",
+});
+        
+    
+        var popup_e009ffea2f8ea1ef6b497df5cf5e5289 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_df7139fcef1710a2a39c9a0a8a66dfbb = $(`<div id="html_df7139fcef1710a2a39c9a0a8a66dfbb" style="width: 100.0%; height: 100.0%;">Step 7: Checkpoint_G</div>`)[0];
+                popup_e009ffea2f8ea1ef6b497df5cf5e5289.setContent(html_df7139fcef1710a2a39c9a0a8a66dfbb);
+            
+        
+
+        marker_b4134637399e555de2c6fecc1dc72466.bindPopup(popup_e009ffea2f8ea1ef6b497df5cf5e5289)
+        ;
+
+        
+    
+    
+            marker_b4134637399e555de2c6fecc1dc72466.bindTooltip(
+                `<div>
+                     Step 7: Checkpoint_G
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b4134637399e555de2c6fecc1dc72466.setIcon(div_icon_914649b3f6c56abbdc2fafc75f9882c2);
+            
+    
+            var marker_3a76f4726b67ec1552afdc110eaa5ddf = L.marker(
+                [13.120058234891316, 100.92069368409793],
+                {
+}
+            ).addTo(map_115e513de2582c6fd65463a5ace0abfa);
+        
+    
+            var div_icon_57aeb2b35d10b7b54bb56329334b2277 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"width:32px;height:32px;border-radius:50%;background:red;color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;box-shadow:0 2px 4px rgba(0,0,0,0.5);border:2px solid #ffffff\"\u003e8\u003c/div\u003e\n                ",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "className": "empty",
+});
+        
+    
+        var popup_c811f391d9871c5a4912ea099d65726b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a05cf92439ef94aee3d8ccb69bba6651 = $(`<div id="html_a05cf92439ef94aee3d8ccb69bba6651" style="width: 100.0%; height: 100.0%;">Step 8: Checkpoint_H</div>`)[0];
+                popup_c811f391d9871c5a4912ea099d65726b.setContent(html_a05cf92439ef94aee3d8ccb69bba6651);
+            
+        
+
+        marker_3a76f4726b67ec1552afdc110eaa5ddf.bindPopup(popup_c811f391d9871c5a4912ea099d65726b)
+        ;
+
+        
+    
+    
+            marker_3a76f4726b67ec1552afdc110eaa5ddf.bindTooltip(
+                `<div>
+                     Step 8: Checkpoint_H
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3a76f4726b67ec1552afdc110eaa5ddf.setIcon(div_icon_57aeb2b35d10b7b54bb56329334b2277);
+            
+    
+            var marker_ba9b6aaaf1199c3d04640f59f1ff7cc1 = L.marker(
+                [13.119293545457571, 100.92099266754671],
+                {
+}
+            ).addTo(map_115e513de2582c6fd65463a5ace0abfa);
+        
+    
+            var div_icon_84967100337731733df4ba542a49c2c3 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"width:32px;height:32px;border-radius:50%;background:red;color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;box-shadow:0 2px 4px rgba(0,0,0,0.5);border:2px solid #ffffff\"\u003e9\u003c/div\u003e\n                ",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "className": "empty",
+});
+        
+    
+        var popup_d968e6882538022b51f06c6552eccc6d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4a6355870e4e4a8290b595f51b912683 = $(`<div id="html_4a6355870e4e4a8290b595f51b912683" style="width: 100.0%; height: 100.0%;">Step 9: Checkpoint_I</div>`)[0];
+                popup_d968e6882538022b51f06c6552eccc6d.setContent(html_4a6355870e4e4a8290b595f51b912683);
+            
+        
+
+        marker_ba9b6aaaf1199c3d04640f59f1ff7cc1.bindPopup(popup_d968e6882538022b51f06c6552eccc6d)
+        ;
+
+        
+    
+    
+            marker_ba9b6aaaf1199c3d04640f59f1ff7cc1.bindTooltip(
+                `<div>
+                     Step 9: Checkpoint_I
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ba9b6aaaf1199c3d04640f59f1ff7cc1.setIcon(div_icon_84967100337731733df4ba542a49c2c3);
+            
+    
+            var marker_e9b5efbf7a29a9c11a83aa5514f890f3 = L.marker(
+                [13.118888523841443, 100.92098073668384],
+                {
+}
+            ).addTo(map_115e513de2582c6fd65463a5ace0abfa);
+        
+    
+            var div_icon_190154294640a54cf057630954824ef4 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"width:32px;height:32px;border-radius:50%;background:red;color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;box-shadow:0 2px 4px rgba(0,0,0,0.5);border:2px solid #ffffff\"\u003e10\u003c/div\u003e\n                ",
+  "iconSize": [32, 32],
+  "iconAnchor": [16, 16],
+  "className": "empty",
+});
+        
+    
+        var popup_424312958e96620bfb75b0c3a75a44b9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_06c0327d3daa71b290892b0104587d9d = $(`<div id="html_06c0327d3daa71b290892b0104587d9d" style="width: 100.0%; height: 100.0%;">Step 10: Checkpoint_J</div>`)[0];
+                popup_424312958e96620bfb75b0c3a75a44b9.setContent(html_06c0327d3daa71b290892b0104587d9d);
+            
+        
+
+        marker_e9b5efbf7a29a9c11a83aa5514f890f3.bindPopup(popup_424312958e96620bfb75b0c3a75a44b9)
+        ;
+
+        
+    
+    
+            marker_e9b5efbf7a29a9c11a83aa5514f890f3.bindTooltip(
+                `<div>
+                     Step 10: Checkpoint_J
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e9b5efbf7a29a9c11a83aa5514f890f3.setIcon(div_icon_190154294640a54cf057630954824ef4);
+            
+    
+            var poly_line_973cb2c5fe0151183fcf1d7a9dd1a69c = L.polyline(
+                [[13.121175156782886, 100.91917763861443], [13.122429331737106, 100.91919964513887], [13.120161658260738, 100.9207100013017], [13.118751724113698, 100.92070378074456], [13.123504977995106, 100.91833176340027], [13.11925987837743, 100.91986438395534], [13.11878571527889, 100.92146159792324], [13.124953720965747, 100.91990487272771], [13.120058234891316, 100.92069368409793], [13.119293545457571, 100.92099266754671], [13.118888523841443, 100.92098073668384], [13.121175156782886, 100.91917763861443]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 6}
+            ).addTo(map_115e513de2582c6fd65463a5ace0abfa);
+        
+    
+            poly_line_973cb2c5fe0151183fcf1d7a9dd1a69c.bindTooltip(
+                `<div>
+                     Route Direction
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
